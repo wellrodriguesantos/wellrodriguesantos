@@ -1,937 +1,610 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="br">
+  <head>
+	<link rel="shortcut icon" href="images/favicon.png" />
+    <title>Marketing para Arquitetos </title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
-    <!-- SEO Meta Tags -->
-    <meta name="description" content="">
-    <meta name="author" content="https://www.instagram.com/wsdesignweb/">
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,600,700,800,900" rel="stylesheet">
 
-    <!-- OG Meta Tags to improve the way the post looks when you share the page on LinkedIn, Facebook, Google+ -->
-	<meta property="og:site_name" content="WS - Design para Web" /> <!-- website name -->
-	<meta property="og:site" content="" /> <!-- website link -->
-	<meta property="og:title" content=""/> <!-- title shown in the actual shared post -->
-	<meta property="og:description" content="" /> <!-- description shown in the actual shared post -->
-	<meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
-	<meta property="og:url" content="" /> <!-- where do you want your post to link to -->
-	<meta property="og:type" content="article" />
-
-    <!-- Website Title -->
-    <title>WS - Design para Web</title>
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
     
-    <!-- Styles -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i" rel="stylesheet">
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/fontawesome-all.css" rel="stylesheet">
-    <link href="css/swiper.css" rel="stylesheet">
-	<link href="css/magnific-popup.css" rel="stylesheet">
-	<link href="css/styles.css" rel="stylesheet">
-	
-	<!-- Favicon  -->
-    <link rel="icon" href="images/favicon.png">
-</head>
-<body data-spy="scroll" data-target=".fixed-top">
-    
-    <!-- Preloader -->
-	<div class="spinner-wrapper">
-        <div class="spinner">
-            <div class="bounce1"></div>
-            <div class="bounce2"></div>
-           <div class="bounce3"></div>
-                  </div>
-    </div>
-    <!-- end of preloader -->
-    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
 
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-md navbar-dark navbar-custom fixed-top">
-        <!-- Text Logo - Use this if you don't have a graphic logo -->
-        <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Leno</a> -->
+    <link rel="stylesheet" href="css/aos.css">
 
-        <!-- Image Logo -->
-        <a class="navbar-brand logo-image" href="index.html"><img src="images/logo.png" alt="Ws desenvolvemos artes, sites e estratégias digitais"></a> 
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Facebook Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window,document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+   fbq('init', '2951955784854534'); 
+  fbq('track', 'PageView');
+  </script>
+  <noscript>
+   <img height="1" width="1" 
+  src="https://www.facebook.com/tr?id=2951955784854534&ev=PageView
+  &noscript=1"/>
+  </noscript>
+  <!-- End Facebook Pixel Code -->
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	  
+	  <style>
+      .bg-default{
+        background-color:rgba(255,255,255,0.01) !important;
+      }
+      .hero{
+        height:100vh auto;
         
-        <!-- Mobile Menu Toggle Button -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-awesome fas fa-bars"></span>
-            <span class="navbar-toggler-awesome fas fa-times"></span>
-        </button>
-        <!-- end of mobile menu toggle button -->
+      }
+      
+      .video-responsive iframe{left:0;top:0;height:100%;width:100%;position:absolute;}
+      .img-header{
+        background-image: url('images/bg_saudavel.jpg');
+        background-position: center;
+        background-attachment: fixed;
 
-        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link page-scroll" href="#header">HOME <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link page-scroll" href="#features">SERVIÇOS</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link page-scroll" href="#preview">CONHEÇA</a>
-                </li>
+       
+       
+      }
+     .header{
+       position: relative;
+       height:100vh;
+      
+     }
+     .black{
+                 color:#000000 !important;
+               }
+    
+     .white{
+      color: #f5f5f5f5;
 
-                <!-- Dropdown Menu -->          
-                <!-- <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle page-scroll" href="#details" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">DETAILS</a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="terms-conditions.html"><span class="item-text">Termos e Condicções</span></a>
-                        <div class="dropdown-items-divide-hr"></div>
-                        <a class="dropdown-item" href="privacy-policy.html"><span class="item-text">Política de Privacidade</span></a>
-                    </div>
-                </li> -->
-                <!-- end of dropdown menu -->
+     }
+     @media (min-width: 1200px) 
+    {
+      .size-btn{
+        padding:1em;
+      }
+      .space{
+       padding-top:10em;
+       padding-bottom:5em !important;}
+       .logo{
+         width: 50%;
+         position:relative;
+         right:0px auto;
+         left:0px auto;
+       }
+       .txt-frase{
+         font-size:13px !important;
+         text-align:center;
+         padding-top:5px;
+       }
+       .icon-pagamento{
+        width:130% !important;
+        padding:1em;
+       }
+      .text-link{
+        color:rgb(138, 1, 218) !important;
+      }
+      .bg-pink{
+        background-color:rgb(138, 1, 218) !important;
+      }
+      .icon{
+        color:rgb(138, 1, 218) !important;
+        font-size: 2em;
+      }
+     } 
+     @media (max-width: 556px) 
+    {
+      .space{
+       padding-top:1em;
+       padding-bottom:2em !important;}
+       .icon{
+        color:rgb(138, 1, 218) !important;
+        font-size: 2em;
+      }
+      .text-link{
+        color:rgb(138, 1, 218) !important;
+      }
+      .bg-pink{
+        background-color:rgb(138, 1, 218) !important;
+      }
+      .text-msg{
+        font-size: 8pt;
+      }
+     } 
+}
+    </style>
+    <nav class="navbar navbar-expand-lg  ftco_navbar  bg-default ftco-navbar-light " id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand align-items-end justify-content-center img-fluid" href="index.html"><img src="images/logo.png" class="img-fluid logo"></a>
+	      <!-- <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button> -->
 
-                <li class="nav-item">
-                    <a class="nav-link page-scroll" href="#contact">CONTATO</a>
-                </li>
-            </ul>
-            <span class="nav-item social-icons">
-                <span class="fa-stack">
-                    <a href="#your-link">
-                        <i class="fas fa-circle fa-stack-2x"></i>
-                        <i class="fab fa-facebook-f fa-stack-1x"></i>
-                    </a>
-                </span>
-                <span class="fa-stack">
-                    <a href="#your-link">
-                        <i class="fas fa-circle fa-stack-2x"></i>
-                        <i class="fab fa-instagram fa-stack-1x"></i>
-                    </a>
-                </span>
-                <span class="fa-stack">
-                    <a href="#your-link">
-                        <i class="fas fa-circle fa-stack-2x"></i>
-                        <i class="fab fa-whatsapp fa-stack-1x"></i>
-                    </a>
-                </span>
-                <span class="fa-stack">
-                    <a href="#your-link">
-                        <i class="fas fa-circle fa-stack-2x"></i>
-                        <i class="fab fa-linkedin fa-stack-1x"></i>
-                    </a>
-                </span>
-            </span>
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">
+	          
+	          <li class="nav-item text-navbar"><p class="black txt-frase">"O sucesso para seu negócio exige dedicação"</p></li>
+	          <!-- <li class="nav-item btn-navbar"><a href="" class="nav-link"><span><button class="btn btn-primary">COMECE AGORA!</button></span></a></li> -->
+	        </ul>
+	      </div> 
+	    </div>
+    </nav>
+    
+    <section class="hero header ">
+      <div class="img-header ">   
+      <h3 class="vr"><strong>PROJETO TODOS OS DIAS</strong></h3>
+        <div class="container">
+          <div class="row ">
+            <div class="header">
+             <div class="space"></div>
+             <div class="container">
+              <div class="row">
+                <div class="col-lg-6 col-sm-12" align="center">
+                  <iframe class="video-responsive" width="100%" height="90%"src="https://www.youtube.com/embed/XbgF8r5Ahmw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12" align="center">
+                  <h2 class=" white responsive-text"><strong>1000 PROJETOS POR MÊS</strong></h2>
+                  <h4 class=" white responsive-text">Elabore projetos que vendem sozinhoS com uma estrutura de Marketing ideal para seu escritório</h4>
+                  <h5 class=" white responsive-text">Invista no sucesso do seu escritório. </h5>
+                  <hr width="50%">
+                  <p class=" white responsive-text">Você vai aprender do ZERO como elaborar uma hábitos sustentáveis para seu negócio </p>
+                  <Br>
+                  <a href=""><button class="btn size-btn btn-warning">
+                    COMPRE AGORA
+                  </button></a>
+                  <!-- <p class="black text-msg">Lembre sempre: Consulte seu médico antes de iniciar qualquer exercício físico. O acompanhamento médico é imprescindível para a sua segurança.</p> -->
+                </div>
+               
+              </div>
+            </div>
+           
+
+           
+          </div>
+          </div>
         </div>
-    </nav> <!-- end of navbar -->
-    <!-- end of navbar -->
+      </div> 
+    </section>
+	  
+		
+
+    <!-- <section class="ftco-section ftco-no-pb ftco-no-pt ftco-services bg-light" id="services-section">
+      <div class="container">
+        <div class="row no-gutters">
+          <div class="col-md-4 ftco-animate py-5 nav-link-wrap">
+            <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+              <a class="nav-link px-4 active" id="v-pills-1-tab" data-toggle="pill" href="#v-pills-1" role="tab" aria-controls="v-pills-1" aria-selected="true"><span class="mr-3 flaticon-ideas"></span> Paletrante</a>
+
+              <a class="nav-link px-4" id="v-pills-2-tab" data-toggle="pill" href="#v-pills-2" role="tab" aria-controls="v-pills-2" aria-selected="false"><span class="mr-3 flaticon-flasks"></span> Educador Digital</a>
+
+              <a class="nav-link px-4" id="v-pills-3-tab" data-toggle="pill" href="#v-pills-3" role="tab" aria-controls="v-pills-3" aria-selected="false"><span class="mr-3 flaticon-analysis"></span> Personal Trainer</a>
+
+              <a class="nav-link px-4" id="v-pills-4-tab" data-toggle="pill" href="#v-pills-4" role="tab" aria-controls="v-pills-4" aria-selected="false"><span class="mr-3 flaticon-web-design"></span> Formado em Educação Física</a>
+
+              <a class="nav-link px-4" id="v-pills-4-tab" data-toggle="pill" href="#v-pills-5" role="tab" aria-controls="v-pills-5" aria-selected="false"><span class="mr-3 flaticon-ux-design"></span>Biomecânica e Cinesiologia</a>
+
+              <a class="nav-link px-4" id="v-pills-5-tab" data-toggle="pill" href="#v-pills-6" role="tab" aria-controls="v-pills-6" aria-selected="false"><span class="mr-3 flaticon-innovation"></span> Ms em Movimento Humano</a>
+
+              <a class="nav-link px-4" id="v-pills-6-tab" data-toggle="pill" href="#v-pills-7" role="tab" aria-controls="v-pills-7" aria-selected="false"><span class="mr-3 flaticon-idea"></span> Docente de pós-graduação </a>
 
 
-    <!-- Header -->
-    <header id="header" class="header">
-        <div class="header-content">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6">
-                        <div class="text-container">
-                            <h1>DESENVOLVEMOS SOLUÇÕES PARA <span id="js-rotating"> MARKETEIROS, DESENVOLVEDORES, EMPREENDEDORES</span></h1>
-                            <p class="p-large">Incentivamos o empreendedorismo e construimos histórias. Abaixo você pode escolher quais das opções você deseja para sua carreira digital.</p>
-                            <a class="btn-solid-lg page-scroll" href="#your-link"><i class="fab fa-apple"></i>DIVULGAR UM PRODUTO</a>
-                            <a class="btn-solid-lg page-scroll" href="#your-link"><i class="fab fa-google-play"></i>START WEB</a>
-                        </div>
-                    </div> <!-- end of col -->
-                    <div class="col-lg-6">
-                        <div class="image-container">
-                            <img class="img-fluid" src="images/header-iphone.png" alt="alternative">
-                        </div> <!-- end of image-container -->
-                    </div> <!-- end of col -->
-                </div> <!-- end of row -->
-            </div> <!-- end of container -->
-        </div> <!-- end of header-content -->
-    </header> <!-- end of header -->
-    <!-- end of header -->
-
-    <!-- Features -->
-    <div id="features" class="tabs">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h2>FEATURES</h2>
-                    <div class="p-heading p-large">Leno was designed based on input from personal development coaches and popular trainers so it offers all</div>
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-            <div class="row">
-
-                <!-- Tabs Links -->
-                <ul class="nav nav-tabs" id="lenoTabs" role="tablist">
-                    <li class="nav-item">
-                        <a class="nav-link active" id="nav-tab-1" data-toggle="tab" href="#tab-1" role="tab" aria-controls="tab-1" aria-selected="true"><i class="fas fa-cog"></i>Design para Web</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="nav-tab-2" data-toggle="tab" href="#tab-2" role="tab" aria-controls="tab-2" aria-selected="false"><i class="fas fa-binoculars"></i>Marketing Digital</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="nav-tab-3" data-toggle="tab" href="#tab-3" role="tab" aria-controls="tab-3" aria-selected="false"><i class="fas fa-search"></i>Web Design</a>
-                    </li>
-                </ul>
-                <!-- end of tabs links -->
-
-
-                <!-- Tabs Content-->
-                <div class="tab-content" id="lenoTabsContent">
-                    
-                    <!-- Tab -->
-                    <div class="tab-pane fade show active" id="tab-1" role="tabpanel" aria-labelledby="tab-1">
-                        <div class="container">
-                            <div class="row">
-                                
-                                <!-- Icon Cards Pane -->
-                                <div class="col-lg-4">
-                                    <div class="card left-pane first">
-                                        <div class="card-body">
-                                            <div class="text-wrapper">
-                                                <h4 class="card-title">Goal Setting</h4>
-                                                <p>Like any self improving process, everything starts with setting your goals and committing to them</p>
-                                            </div>
-                                            <div class="card-icon">
-                                                <i class="far fa-compass"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="card left-pane">
-                                        <div class="card-body">
-                                            <div class="text-wrapper">
-                                                <h4 class="card-title">Visual Editor</h4>
-                                                <p>Leno provides a well designed and ergonomic visual editor for you to edit your notes and input data</p>
-                                            </div>
-                                            <div class="card-icon">
-                                                <i class="far fa-file-code"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="card left-pane">
-                                        <div class="card-body">
-                                            <div class="text-wrapper">
-                                                <h4 class="card-title">Refined Options</h4>
-                                                <p>Each option packaged in the app's menus is provided in order to improve your personal development status</p>
-                                            </div>
-                                            <div class="card-icon">
-                                                <i class="far fa-gem"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- end of icon cards pane -->
-
-                                <!-- Image Pane -->
-                                <div class="col-lg-4">
-                                    <img class="img-fluid" src="images/features-iphone-1.png" alt="alternative">
-                                </div>
-                                <!-- end of image pane -->
-                                
-                                <!-- Icon Cards Pane -->
-                                <div class="col-lg-4">
-                                    <div class="card right-pane first">
-                                        <div class="card-body">
-                                            <div class="card-icon">
-                                                <i class="far fa-calendar-check"></i>
-                                            </div>
-                                            <div class="text-wrapper">
-                                                <h4 class="card-title">Calendar Input</h4>
-                                                <p>Schedule your appointments, meetings and periodical evaluations using the provided in-app calendar option</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="card right-pane">
-                                        <div class="card-body">
-                                            <div class="card-icon">
-                                                <i class="far fa-bookmark"></i>
-                                            </div>
-                                            <div class="text-wrapper">
-                                                <h4 class="card-title">Easy Reading</h4>
-                                                <p>Reading focus mode for long form articles, ebooks and other materials which involve large text areas</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="card right-pane">
-                                        <div class="card-body">
-                                            <div class="card-icon">
-                                                <i class="fas fa-cube"></i>
-                                            </div>
-                                            <div class="text-wrapper">
-                                                <h4 class="card-title">Good Foundation</h4>
-                                                <p>Get a solid foundation for your self development efforts. Try Leno mobile app for any mobile platform</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- end of icon cards pane -->
-
-                            </div> <!-- end of row -->
-                        </div> <!-- end of container -->
-                    </div> <!-- end of tab-pane -->
-                    <!-- end of tab -->
-
-                    <!-- Tab -->
-                    <div class="tab-pane fade" id="tab-2" role="tabpanel" aria-labelledby="tab-2">
-                        <div class="container">
-                            <div class="row">
-
-                                <!-- Image Pane -->
-                                <div class="col-md-4">
-                                    <img class="img-fluid" src="images/features-iphone-2.png" alt="alternative">
-                                </div>
-                                <!-- end of image pane -->
-                                
-                                <!-- Text And Icon Cards Area -->
-                                <div class="col-md-8">
-                                    <div class="text-area">
-                                        <h3>Track Result Based On Your</h3>
-                                        <p>After you've configured the app and settled on the data gathering techniques you can not start the information trackers and start collecting those <a class="turquoise" href="#your-link">interesting details</a>. You can always change them.</p>
-                                    </div> <!-- end of text-area -->
-                                    
-                                    <div class="icon-cards-area">
-                                            <div class="card">
-                                                <div class="card-icon">
-                                                    <i class="fas fa-cube"></i>
-                                                </div>
-                                                <div class="card-body">
-                                                    <h4 class="card-title">Good Foundation</h4>
-                                                    <p>Get a solid foundation for your self development efforts. Try Leno mobile app for any mobile platform</p>
-                                                </div>
-                                            </div>
-                                            <div class="card">
-                                                <div class="card-icon">
-                                                    <i class="far fa-bookmark"></i>
-                                                </div>
-                                                <div class="card-body">
-                                                    <h4 class="card-title">Easy Reading</h4>
-                                                    <p>Reading focus mode for long form articles, ebooks and other materials which involve large text areas</p>
-                                                </div>
-                                            </div>
-                                            <div class="card">
-                                                <div class="card-icon">
-                                                    <i class="far fa-calendar-check"></i>
-                                                </div>
-                                                <div class="card-body">
-                                                    <h4 class="card-title">Calendar Input</h4>
-                                                    <p>Schedule your appointments, meetings and periodical evaluations using the provided in-app calendar option</p>
-                                                </div>
-                                            </div>
-                                            <div class="card">
-                                                <div class="card-icon">
-                                                    <i class="far fa-file-code"></i>
-                                                </div>
-                                                <div class="card-body">
-                                                    <h4 class="card-title">Visual Editor</h4>
-                                                    <p>Leno provides a well designed and ergonomic visual editor for you to edit your notes and input data</p>
-                                                </div>
-                                            </div>
-                                    </div> <!-- end of icon cards area -->
-                                </div> <!-- end of col-md-8 -->
-                                <!-- end of text and icon cards area -->
-
-                            </div> <!-- end of row -->
-                        </div> <!-- end of container -->
-                    </div> <!-- end of tab-pane -->
-                    <!-- end of tab -->
-
-                    <!-- Tab -->
-                    <div class="tab-pane fade" id="tab-3" role="tabpanel" aria-labelledby="tab-3">
-                        <div class="container">
-                            <div class="row">
-
-                                <!-- Text And Icon Cards Area -->
-                                <div class="col-md-8">
-                                    <div class="icon-cards-area">
-                                        <div class="card">
-                                            <div class="card-icon">
-                                                <i class="far fa-calendar-check"></i>
-                                            </div>
-                                            <div class="card-body">
-                                                <h4 class="card-title">Calendar Input</h4>
-                                                <p>Schedule your appointments, meetings and periodical evaluations using the provided in-app calendar option</p>
-                                            </div>
-                                        </div>
-                                        <div class="card">
-                                            <div class="card-icon">
-                                                <i class="far fa-file-code"></i>
-                                            </div>
-                                            <div class="card-body">
-                                                <h4 class="card-title">Visual Editor</h4>
-                                                <p>Leno provides a well designed and ergonomic visual editor for you to edit your notes and input data</p>
-                                            </div>
-                                        </div>
-                                        <div class="card">
-                                            <div class="card-icon">
-                                                <i class="fas fa-cube"></i>
-                                            </div>
-                                            <div class="card-body">
-                                                <h4 class="card-title">Good Foundation</h4>
-                                                <p>Get a solid foundation for your self development efforts. Try Leno mobile app for any mobile platform</p>
-                                            </div>
-                                        </div>
-                                        <div class="card">
-                                            <div class="card-icon">
-                                                <i class="far fa-bookmark"></i>
-                                            </div>
-                                            <div class="card-body">
-                                                <h4 class="card-title">Easy Reading</h4>
-                                                <p>Reading focus mode for long form articles, ebooks and other materials which involve large text areas</p>
-                                            </div>
-                                        </div>
-                                    </div> <!-- end of icon cards area -->
-                                    
-                                    <div class="text-area">
-                                        <h3>Monitoring Tools Evaluation</h3>
-                                        <p>Monitor the evolution of your finances and health state using tools integrated in Leno. The generated real time reports can be filtered based on any <a class="turquoise" href="#your-link">desired criteria</a>.</p>
-                                    </div> <!-- end of text-area -->
-                                </div> <!-- end of col-md-8 -->
-                                <!-- end of text and icon cards area -->
-
-                                <!-- Image Pane -->
-                                <div class="col-md-4">
-                                    <img class="img-fluid" src="images/features-iphone-3.png" alt="alternative">
-                                </div>
-                                <!-- end of image pane -->
-                                    
-                            </div> <!-- end of row -->
-                        </div> <!-- end of container -->
-                    </div><!-- end of tab-pane -->
-                    <!-- end of tab -->
-
-                </div> <!-- end of tab-content -->
-                <!-- end of tabs content -->
-
-            </div> <!-- end of row --> 
-        </div> <!-- end of container --> 
-    </div> <!-- end of tabs -->
-    <!-- end of features -->
-
-
-    <!-- Video -->
-    <div id="preview" class="basic-1">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h2>Olá Tudo bem?</h2>
-                    <div class="p-heading p-large">Como é bom ter você aqui! Quero me apresentar e me comprometer a fazer um trabalho excepcional por você. <bR><strong>Veja o vídeo abaixo!</strong></div>
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-            <div class="row">
-                <div class="col-lg-12">
-
-                    <!-- Video Preview -->
-                    <div class="image-container">
-                        <div class="video-wrapper">
-                            <a class="popup-youtube" href="https://www.youtube.com/watch?v=fLCjQJCekTs" data-effect="fadeIn">
-                                <img class="img-fluid" src="images/video-frame.jpg" alt="alternative">
-                                <span class="video-play-button">
-                                    <span></span>
-                                </span>
-                            </a>
-                        </div> <!-- end of video-wrapper -->
-                    </div> <!-- end of image-container -->
-                    <!-- end of video preview -->
-
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of basic-1 -->
-    <!-- end of video -->
-
-
-    <!-- Details 1 -->
-    <div id="details" class="basic-2">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <img class="img-fluid" src="images/details-1-iphone.png" alt="alternative">
-                </div> <!-- end of col -->
-                <div class="col-lg-6">
-                    <div class="text-container">
-                        <h3>Goals Setting</h3>
-                        <p>Leno can easily help you track your personal development evolution if you take the time to properly setup your goals at the beginning of the training process. Check out the details</p>
-                        <a class="btn-solid-reg popup-with-move-anim" href="#details-lightbox-1">LIGHTBOX</a>
-                    </div> <!-- end of text-container -->
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of basic-2 -->
-    <!-- end of details 1 -->
-
-
-    <!-- Details 2 -->
-    <div class="basic-3">
-        <div class="second">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6">
-                        <div class="text-container">
-                            <h3>Calendar Input</h3>
-                            <p>The calendar input function enables the user to setup training, meditation and relaxation sessions with ease. Just open the feature and start setting up your time as you desire</p>
-                            <a class="btn-solid-reg popup-with-move-anim" href="#details-lightbox-2">LIGHTBOX</a>
-                        </div> <!-- end of text-container -->
-                    </div> <!-- end of col -->
-                    <div class="col-lg-6">
-                        <img class="img-fluid" src="images/details-2-iphone.png" alt="alternative">
-                    </div> <!-- end of col -->
-                </div> <!-- end of row -->
-            </div> <!-- end of container -->
-        </div> <!-- end of second -->
-    </div> <!-- end of basic-3 -->    
-    <!-- end of details 2 -->
-
-
-    <!-- Details Lightboxes -->
-	<!-- Lightbox -->
-	<div id="details-lightbox-1" class="lightbox-basic zoom-anim-dialog mfp-hide">
-		<div class="row">
-			<button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
-			<div class="col-lg-6">
-				<img class="img-fluid" src="images/details-lightbox-1.png" alt="alternative">
 			</div>
-			<div class="col-lg-6">
-				<h3>Goals Setting</h3>
-				<hr>
-                <p>Leno can easily help you track your personal development evolution if you take the time to set it up.</p>
-                <h4>User Feedback</h4>
-                <p>This is a great app which can help you save time and make your live easier. And it will help improve your productivity levels.</p>
-                <p>You should definitely give it a try when you need a good app.</p>
-				<table>
-					<tr><td class="icon-cell"><i class="fas fa-desktop"></i></td><td>Responsive layout</td></tr>
-					<tr><td class="icon-cell"><i class="fas fa-bullhorn"></i></td><td>Distinctive CTAs</td></tr>
-					<tr><td class="icon-cell"><i class="fas fa-image"></i></td><td>Image gallery slider</td></tr>
-					<tr><td class="icon-cell"><i class="fas fa-envelope"></i></td><td>Contact forms</td></tr>
-					<tr><td class="icon-cell"><i class="fab fa-font-awesome-flag"></i></td><td>FontAwesome icons</td></tr>
-					<tr><td class="icon-cell"><i class="fas fa-code"></i></td><td>Well-structured code</td></tr>
-				</table>
-				<a class="btn-solid-reg" href="#your-link">DETAILS</a> <a class="btn-outline-reg mfp-close as-button" href="#details">BACK</a> 
-			</div>
-		</div> <!-- end of row -->
-    </div> <!-- end of lightbox-basic -->
-    <!-- end of lightbox -->
+          </div>
+          <div class="col-md-8 ftco-animate p-4 p-md-5 d-flex align-items-center">
+            
+            <div class="tab-content pl-md-5" id="v-pills-tabContent">
+
+              <div class="tab-pane fade show active py-5" id="v-pills-1" role="tabpanel" aria-labelledby="v-pills-1-tab">
+                <span class="icon mb-3 d-block flaticon-ideas"></span>
+                <h2 class="mb-4">Palestrante</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt voluptate, quibusdam sunt iste dolores consequatur</p>
+                <p>Inventore fugit error iure nisi reiciendis fugiat illo pariatur quam sequi quod iusto facilis officiis nobis sit quis molestias asperiores rem, blanditiis! Commodi exercitationem vitae deserunt qui nihil ea, tempore et quam natus quaerat doloremque.</p>
+                <p><a href="#" class="btn btn-primary px-4 py-3">Learn More</a></p>
+              </div>
+
+              <div class="tab-pane fade py-5" id="v-pills-2" role="tabpanel" aria-labelledby="v-pills-2-tab">
+                <span class="icon mb-3 d-block flaticon-flasks"></span>
+                <h2 class="mb-4">Educador Digital</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt voluptate, quibusdam sunt iste dolores consequatur</p>
+                <p>Inventore fugit error iure nisi reiciendis fugiat illo pariatur quam sequi quod iusto facilis officiis nobis sit quis molestias asperiores rem, blanditiis! Commodi exercitationem vitae deserunt qui nihil ea, tempore et quam natus quaerat doloremque.</p>
+                <p><a href="#" class="btn btn-primary px-4 py-3">Learn More</a></p>
+              </div>
+
+              <div class="tab-pane fade py-5" id="v-pills-3" role="tabpanel" aria-labelledby="v-pills-3-tab">
+                <span class="icon mb-3 d-block flaticon-analysis"></span>
+                <h2 class="mb-4">Personal Trainer</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt voluptate, quibusdam sunt iste dolores consequatur</p>
+                <p>Inventore fugit error iure nisi reiciendis fugiat illo pariatur quam sequi quod iusto facilis officiis nobis sit quis molestias asperiores rem, blanditiis! Commodi exercitationem vitae deserunt qui nihil ea, tempore et quam natus quaerat doloremque.</p>
+                <p><a href="#" class="btn btn-primary px-4 py-3">Learn More</a></p>
+              </div>
+
+              <div class="tab-pane fade py-5" id="v-pills-4" role="tabpanel" aria-labelledby="v-pills-4-tab">
+                <span class="icon mb-3 d-block flaticon-web-design"></span>
+                <h2 class="mb-4">Formação em Educação Física</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt voluptate, quibusdam sunt iste dolores consequatur</p>
+                <p>Inventore fugit error iure nisi reiciendis fugiat illo pariatur quam sequi quod iusto facilis officiis nobis sit quis molestias asperiores rem, blanditiis! Commodi exercitationem vitae deserunt qui nihil ea, tempore et quam natus quaerat doloremque.</p>
+                <p><a href="#" class="btn btn-primary px-4 py-3">Learn More</a></p>
+              </div>
+
+              <div class="tab-pane fade py-5" id="v-pills-5" role="tabpanel" aria-labelledby="v-pills-4-tab">
+                <span class="icon mb-3 d-block flaticon-ux-design"></span>
+                <h2 class="mb-4">Especialista em Biomecânica e Cinesiologia</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt voluptate, quibusdam sunt iste dolores consequatur</p>
+                <p>Inventore fugit error iure nisi reiciendis fugiat illo pariatur quam sequi quod iusto facilis officiis nobis sit quis molestias asperiores rem, blanditiis! Commodi exercitationem vitae deserunt qui nihil ea, tempore et quam natus quaerat doloremque.</p>
+                <p><a href="#" class="btn btn-primary px-4 py-3">Learn More</a></p>
+              </div>
+
+              <div class="tab-pane fade py-5" id="v-pills-6" role="tabpanel" aria-labelledby="v-pills-5-tab">
+                <span class="icon mb-3 d-block flaticon-innovation"></span>
+                <h2 class="mb-4">Mestrando em Ciência do Movimento Humano</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt voluptate, quibusdam sunt iste dolores consequatur</p>
+                <p>Inventore fugit error iure nisi reiciendis fugiat illo pariatur quam sequi quod iusto facilis officiis nobis sit quis molestias asperiores rem, blanditiis! Commodi exercitationem vitae deserunt qui nihil ea, tempore et quam natus quaerat doloremque.</p>
+                <p><a href="#" class="btn btn-primary px-4 py-3">Learn More</a></p>
+              </div>
+
+              <div class="tab-pane fade py-5" id="v-pills-7" role="tabpanel" aria-labelledby="v-pills-6-tab">
+                <span class="icon mb-3 d-block flaticon-idea"></span>
+                <h2 class="mb-4">Docente de Pós-Graduação</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt voluptate, quibusdam sunt iste dolores consequatur</p>
+                <p>Inventore fugit error iure nisi reiciendis fugiat illo pariatur quam sequi quod iusto facilis officiis nobis sit quis molestias asperiores rem, blanditiis! Commodi exercitationem vitae deserunt qui nihil ea, tempore et quam natus quaerat doloremque.</p>
+                <p><a href="#" class="btn btn-primary px-4 py-3">Learn More</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+<!-- Apresentação -->
+    <section class="ftco-counter img ftco-section ftco-no-pt ftco-no-pb" id="about-section">
+    	<div class="container">
+    		<div class="row d-flex">
+    			<div class="col-md-6 col-lg-5 d-flex">
+    				<div class="img d-flex align-self-stretch align-items-center" style="background-image:url(images/about.jpg);">
+    				</div>
+    			</div>
+    			<div class="col-md-6 col-lg-7 pl-lg-5 py-5 " align="center">
+    				<div class="py-md-5">
+	    				<div class="row justify-content-start pb-3">
+			          <div class="col-md-12 heading-section ftco-animate">
+			          	<span class=" text-link">PROJETOS TODOS OS DIAS</span>
+			            <h2 class="mb-4" style="font-size: 34px; text-transform: capitalize;">Marketing para Arquitetos</h2>
+			            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean magna tortor, dignissim nec lectus eu, euismod pellentesque dui. Sed tristique nunc quis nisl ornare semper. Proin in molestie massa. Aliquam erat volutpat. Quisque dignissim nibh ac augue dapibus pulvinar. Nulla feugiat suscipit massa, ut egestas ante condimentum quis. Nam vestibulum hendrerit ante et elementum. Etiam eget massa in tortor scelerisque malesuada et nec purus. Integer id odio a mauris maximus efficitur et nec eros. Aenean et gravida metus. Cras elit arcu, malesuada at ante non, malesuada lobortis sapien. Pellentesque posuere ac nibh id iaculis. </p>
+			            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean magna tortor, dignissim nec lectus eu, euismod pellentesque dui. Sed tristique nunc quis nisl ornare semper. Proin in molestie massa. Aliquam erat volutpat. Quisque dignissim nibh ac augue dapibus pulvinar. Nulla feugiat suscipit massa, ut egestas ante condimentum quis. Nam vestibulum hendrerit ante et elementum. Etiam eget massa in tortor scelerisque malesuada et nec purus. Integer id odio a mauris maximus efficitur et nec eros. Aenean et gravida metus. Cras elit arcu, malesuada at ante non, malesuada lobortis sapien. Pellentesque posuere ac nibh id iaculis. </p>
+			            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean magna tortor, dignissim nec lectus eu, euismod pellentesque dui. Sed tristique nunc quis nisl ornare semper. Proin in molestie massa. Aliquam erat volutpat. Quisque dignissim nibh ac augue dapibus pulvinar. Nulla feugiat suscipit massa, ut egestas ante condimentum quis. Nam vestibulum hendrerit ante et elementum. Etiam eget massa in tortor scelerisque malesuada et nec purus. Integer id odio a mauris maximus efficitur et nec eros. Aenean et gravida metus. Cras elit arcu, malesuada at ante non, malesuada lobortis sapien. Pellentesque posuere ac nibh id iaculis. </p>
+                  
+                  <br>
+                  <h4 align="center" class="text-link">"FRASE DE IMPACTO" - AUTOR</h4>
+          <div class="faded">
+							<ul class="ftco-social text-center ">
+				<li class="ftco-animate "><a href="https://www.youtube.com/watch?v=5BL50Ux3uRs"  target="_blank"><span class="icon-youtube icon"></span></a></li>
+				<li class="ftco-animate "><a href="https://www.instagram.com/diegohenriquesouza/" target="_blank"><span class="icon icon-instagram"></span></a></li>
+			  </ul>
+		  </div>
+	  </div>
+					</div>
+			        </div>
+		          <div class="counter-wrap ftco-animate d-flex mt-md-3">
+	              <div class="text p-4 bg-pink ">
+	              	<p class="mb-0">
+		                <span class="number " data-number="10">0</span>
+		                <span>Anos de Experiência</span>
+	                </p>
+				  </div>
+				 
+				</div>
+				
+	        </div>
+        </div>
+    	</div>
+    </section>
+<!-- Depoimentos -->
+<section class="  backgrund-pink ftco-section testimony-section bg-pink" id="testimony-section">
+  <div class="container">
+    <div class="row justify-content-center pb-3">
+      <div class="col-md-7 text-center heading-section heading-section-white ftco-animate">
+        <h2 class="mb-4 ">Depoimentos</h2>
+      </div>
+    </div>
+    <div class="row ftco-animate justify-content-center">
+      <div class="col-md-12">
+        <div class="carousel-testimony owl-carousel ftco-owl">
+          <div class="item">
+            <div class="testimony-wrap text-center py-4 pb-5">
+              <div class="user-img-rosa " style="background-image: url(images/person_1.jpg)">
+                <span class="quote-rosa backgrund-pink d-flex align-items-center justify-content-center">
+                  <i class="icon-quote-left"></i>
+                </span>
+              </div>
+              <div class="text px-4 pb-5">
+                <p class="mb-4">O sucesso é treinável e esse conteúdo mudou a história do meu escritório de Arquitetura e Engenharia.100% DE RECOMENDAÇÃO</p>
+                <p class="name">Ignis</p>
+                <span class="position">Arquitendo Sonhos </span>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="testimony-wrap text-center py-4 pb-5">
+              <div class="user-img-rosa" style="background-image: url(images/person_2.jpg)">
+                <span class="quote-rosa d-flex align-items-center justify-content-center">
+                  <i class="icon-quote-left"></i>
+                </span>
+              </div>
+              <div class="text px-4 pb-5">
+                <p class="mb-4">O processe criativo que eles transformaram minha mídia social elevou do amador ao profissional meu negócio. Hoje conseguimos fechar negócio com qualquer nicho de mercado. </p>
+                <p class="name">Mariana Costa</p>
+                <span class="position">Gerente de Projetos Omega Construir</span>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="testimony-wrap text-center py-4 pb-5">
+              <div class="user-img-rosa" style="background-image: url(images/person_3.jpg)">
+                <span class="quote-rosa d-flex align-items-center justify-content-center">
+                  <i class="icon-quote-left"></i>
+                </span>
+              </div>
+              <div class="text px-4 pb-5">
+                <p class="mb-4">A maior habilidade que eles ensinam é a constância, a segunda  é todo conteúdo programado no curso. Os caras realmente vivem o que pregam e estabelecem uma conexão com nosso negócio inimaginável. Acaba sendo mais barato do que uma agência de Marketing trabalhando 08 horas por dia para nós. </p>
+                <p class="name">João Pedro</p>
+                <span class="position">Ceo Zeus Construtora</span>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="item">
+            <div class="testimony-wrap text-center py-4 pb-5">
+              <div class="user-img-rosa" style="background-image: url(images/person_4.jpg)">
+                <span class="quote-rosa d-flex align-items-center justify-content-center">
+                  <i class="icon-quote-left"></i>
+                </span>
+              </div>
+              <div class="text px-4 pb-5">
+                <p class="mb-4">Apenas um mês já fez a diferença de anos de dúvidas...depois que contratei a consultoria do Coach Diego o resultado foi muito rápido e aparente, é impressionante como o cara é detalhista e profissional...eu achei que sabia das coisas mas o cara é foda...todos deviam contratar uma consultoria mas pesquisar muito sobre o profissional, o Diego mostra nas suas redes sociais o resultado do seu trabalho... o cara é referência... eu indico sem nenhuma dúvida.</p>
+                <p class="name">Kleber</p>
+                <span class="position">chef de cozinha </span>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="testimony-wrap text-center py-4 pb-5">
+              <div class="user-img-rosa" style="background-image: url(images/person_3.jpg)">
+                <span class="quote-rosa d-flex align-items-center justify-content-center">
+                  <i class="icon-quote-left"></i>
+                </span>
+              </div>
+              <div class="text px-4 pb-5">
+                <p class="mb-4">Diego é o cara! E cada dia que passa eu tenho mais convicção de que fiz a escolha certa. Hoje estou à 11 semanas para meu primeiro show na categoria wellness NPC nos Estados Unidos e meu corpo evolui absurdamente cada semana. Eu estou super ansiosa para estrearmos nossa caminhada e vamos buscar esse pro card juntos !</p>
+                <p class="name">Bárbara</p>
+                <span class="position">mora nos Estados Unidos </span>
+              </div>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contador -->
+<section  style="background-image:url(images/bg_valorizacao.jpg);">
+  <div class="container" >   
+  <div class="row">
+    <div style="color:#444444; font-size:20px; padding:10px;  " >
+
+        <script type="text/javascript">
+        document.write("<span id='pageinval35' style='font-family: helvetica, sans-serif; font-weight:bold;';></span>");
+
+        function countdown_load99(){var the_event="ESSA OFERTA ACABA EM:";
+
+        var on_event="Evento"; //Mensagem no dia do evento
+        var event="Primeiro dia do mês"; //Nome do evento
+        var yr=2020;
+        var mo=03;
+        var da=21;
+        var hr=23;
+        var min=59;
+        var sec=0;
+        var month='';
+        var month=new Array("Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec");var bottom_event="";var now_d=new Date();
+        var now_year=now_d.getYear();if (now_year < 1000)now_year+=1900;var now_month=now_d.getMonth();
+        var now_day=now_d.getDate();
+        var now_hour=now_d.getHours();
+        var now_min=now_d.getMinutes();
+        var now_sec=now_d.getSeconds();
+        var now_val=month[now_month]+" "+now_day+", "+now_year+" "+now_hour+":"+now_min+":"+now_sec;event_val=month[mo-1]+" "+da+", "+yr+" "+hr+":"+min+":"+sec;difference=Date.parse(event_val)-Date.parse(now_val);differenceday=Math.floor(difference/(60*60*1000*24)*1);differencehour=Math.floor((difference%(60*60*1000*24))/(60*60*1000)*1);differencemin=Math.floor(((difference%(60*60*1000*24))%(60*60*1000))/(60*1000)*1);differencesec=Math.floor((((difference%(60*60*1000*24))%(60*60*1000))%(60*1000))/1000*1);if(document.getElementById('pageinval35')){if(differenceday<=0&&differencehour<=0&&differencemin<=0&&differencesec<=1&&now_day==da){document.getElementById('pageinval35').innerHTML=on_event;}else if (differenceday<=-1){document.getElementById('pageinval35').innerHTML="Evento : "+on_event+" ... já passou";}else {document.getElementById('pageinval35').innerHTML="<center><font size='5'><Br>"+the_event+"</font> <font size='8'><br>"+differenceday+" dias "+differencehour+" horas "+differencemin+" minutos "+differencesec+" segundos "+bottom_event ;}
+        }setTimeout("countdown_load99()",1000);}countdown_load99();
+
+
+        </script>
+        <br>
+</div>
+  </div>
+</div>
+</section>
+
+    <section class="ftco-section ftco-project bg-light" id="projects-section">
+    	<div class="container px-md-5">
+    		<div class="row justify-content-center pb-5">
+          <div class="col-md-12 heading-section text-center ftco-animate">
+          	<span class="text-link">O MELHOR MÉTODO NA ÁREA</span>
+            <h2 class="mb-4"> Musculação para Gestantes</h2>
+            <p>Aplicando um método saudável e infalível para sua rotina de treinos</p>
+          </div>
+        </div>
+    		<div class="row">
+    			<div class="col-lg-12 col-md-12 col-sm-12 testimonial">
+            <div class="carousel-project owl-carousel">
+            	<div class="item">
+            		<div class="project">
+		    					<div class="img">
+				    				<img src="images/project-1.jpg" class="img-fluid" alt="">
+				    				<div class="text px-4 bg-pink">
+				    					<!-- <h3><a href="https://www.hotmart.com/product/beneficios-da-musculacao-na-gestacao/E22596747B" disabled="">Curso em Vídeo </a></h3>
+				    					<span>Autor: Diego Henrique</span> -->
+				    				</div>
+			    				</div>
+		    				</div>
+              </div>
+             
+            	<div class="item">
+            		<div class="project">
+		    					<div class="img">
+				    				<img src="images/project-3.jpg" class="img-fluid" alt="">
+				    				<div class="text px-4 bg-pink">
+				    					<!-- <h3><a href="https://www.hotmart.com/product/beneficios-da-musculacao-na-gestacao/E22596747B" disabled=""> Ebook Musculação na Gestação </a></h3>
+				    					<span>Autor: Diego Henrique</span> -->
+				    				</div>
+			    				</div>
+		    				</div>
+              </div>
+              <div class="item">
+            		<div class="project">
+		    					<div class="img">
+				    				<img src="images/project-2.jpg" class="img-fluid" alt="">
+				    				<div class="text px-4 bg-pink">
+				    					<!-- <h3><a href="https://t.me/joinchat/AAAAAEUjqjUmP4Gyz0defw" disabled=""> Grupo Exclusivo no Telegram </a></h3>
+				    					<span>Instrutor: Diego Henrique</span> -->
+				    				</div>
+			    				</div>
+		    				</div>
+            	</div>
+            	
+            	</div>
+            </div>
+          </div>
+        </div>
+        <Br>
+          <div align="center">
+          <H4 class="text-link">NÃO PERCA A <strong>OPORTUNIDADE</strong> DE INVESTIR <BR>NO SEU NEGÓCIO</H4>
+          <h3>1 MÊS DE MARKETING DE VERDADE E 12 MESES DE PROJETOS</h3>
+          <H1 class="text-link"><strong>CURSO EM VÍDEO + EBOOK PARA MÍDIAS SOCIAIS + GRUPO EXCLUSIVO NO TELEGRAM</strong></H1>
+          <H2>DE <strike>R$00,00</strike> POR R$00,00</H2>
+          <a href=""><button class="btn size-btn btn-danger">
+            COMPRE AGORA
+          </button></a>
+          <br> <br>
+          <h4 >
+            
+            <strong>COMPRA 100% SEGURA</strong></h4>
+          <br>
+          <div class="container d-sm-block d-none ">
+          <div class="row">
+            <div class="col-md-1 offset-4 icon-pagamento "><img src="images/formadepagamento/AMEX.svg" ></div>
+            <div class="col-md-1 icon-pagamento "><img src="images/formadepagamento/BILLET.svg" ></div>
+            <div class="col-md-1 icon-pagamento "><img src="images/formadepagamento/HIPERCARD.svg" ></div>
+            <div class="col-md-1 icon-pagamento "><img src="images/formadepagamento/ELO.svg" ></div>
+            <br>
+            <div class="col-md-1 offset-4 icon-pagamento "><img src="images/formadepagamento/HIPER.svg" ></div>
+            <div class="col-md-1 icon-pagamento "><img src="images/formadepagamento/MASTER_CARD.svg" ></div>
+            <div class="col-md-1 icon-pagamento "><img src="images/formadepagamento/PAYPAL.svg" ></div>
+            <div class="col-md-1 icon-pagamento "><img src="images/formadepagamento/VISA.svg" ></div>
+          </div>
+          </div>
+         </div>
+      </div>
+      
+    </section>
+<!-- BLog -->
+
+
+    <section class="ftco-section bg-light" id="blog-section" >
+      <div class="container" >
+        <div class="row justify-content-center mb-5 pb-5">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <span class="text-link">Instagram</span>
+            <h2 class="mb-4">Novidades </h2>
+            <p>Buscando resultados com o conhecimento</p>
+          </div>
+        </div>
+        <div class="row d-flex">
+          <!-- SnapWidget -->
+<!-- SnapWidget -->
+<script src="https://snapwidget.com/js/snapwidget.js"></script>
+<!-- SnapWidget -->
+<script src="https://snapwidget.com/js/snapwidget.js"></script>
+<iframe src="https://snapwidget.com/embed/800642" class="snapwidget-widget" allowtransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden;  width:100%; height: 100%;"></iframe>      </div>
+    </section>
+
     
-    <!-- Lightbox -->
-    <div id="details-lightbox-2" class="lightbox-basic zoom-anim-dialog mfp-hide">
-		<div class="row">
-			<button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
-			<div class="col-lg-6">
-				<img class="img-fluid" src="images/details-lightbox-2.png" alt="alternative">
-			</div>
-			<div class="col-lg-6">
-				<h3>Calendar Input</h3>
-				<hr>
-                <p>The calendar input function enables the user to setup training, meditation and relaxation sessions with ease.</p>
-                <h4>User Feedback</h4>
-                <p>This is a great app which can help you save time and make your live easier. And it will help improve your productivity levels.</p>
-                <p>You should definitely give it a try when you need a good app.</p>
-				<table>
-					<tr><td class="icon-cell"><i class="fas fa-desktop"></i></td><td>Responsive layout</td></tr>
-					<tr><td class="icon-cell"><i class="fas fa-bullhorn"></i></td><td>Distinctive CTAs</td></tr>
-					<tr><td class="icon-cell"><i class="fas fa-image"></i></td><td>Image gallery slider</td></tr>
-					<tr><td class="icon-cell"><i class="fas fa-envelope"></i></td><td>Contact forms</td></tr>
-					<tr><td class="icon-cell"><i class="fab fa-font-awesome-flag"></i></td><td>FontAwesome icons</td></tr>
-					<tr><td class="icon-cell"><i class="fas fa-code"></i></td><td>Well-structured code</td></tr>
-				</table>
-				<a class="btn-solid-reg" href="#your-link">DETAILS</a> <a class="btn-outline-reg mfp-close as-button" href="#details">BACK</a>
-			</div>
-		</div> <!-- end of row -->
-    </div> <!-- end of lightbox-basic -->
-    <!-- end of lightbox -->
-    <!-- end of details lightboxes -->
+		
 
+    <footer class="ftco-footer ftco-section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">Marketing para Arquitetos</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean magna tortor, dignissim nec lectus eu, euismod pellentesque dui. Sed tristique nunc quis nisl ornare semper. Proin in molestie massa. Aliquam erat volutpat. Quisque dignissim nibh ac augue dapibus pulvinar. Nulla feugiat suscipit massa, ut egestas ante condimentum quis. Nam vestibulum hendrerit ante et elementum. Etiam eget massa in tortor scelerisque malesuada et nec purus. Integer id odio a mauris maximus efficitur et nec eros. Aenean et gravida metus. Cras elit arcu, malesuada at ante non, malesuada lobortis sapien. Pellentesque posuere ac nibh id iaculis. </p>
+              <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
+                <li class="ftco-animate "><a href=""  target="_blank"><span class="icon-youtube icon"></span></a></li>
+                <li class="ftco-animate "><a href="" target="_blank"><span class="icon icon-instagram"></span></a></li>
+                      </ul>
+            </div>
+          </div>
+         
+         
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+            	<h2 class="ftco-heading-2">Surgiu alguma dúvida?</h2>
+            	<div class="block-23 mb-3">
+	              <ul>
+	                <li><span class="icon icon-map-marker"></span><span class="text">Trabalhamos 100% online, portanto converse com o top personal nos meios abaixo.</span></li>
+	                <!-- <li><a href="#"><span class="icon icon-phone"></span><span class="text">+55 35 9 9999-9999</span></a></li> -->
+	                <li><a href="mailto:agenciapelep@gmail.com"><span class="icon icon-envelope"></span><span class="text">agenciapelep@gmail.com</span></a></li>
+	              </ul>
+	            </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 text-center">
 
-    <!-- Screenshots -->
-    <div class="slider-2">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    
-                    <!-- Image Slider -->
-                    <div class="slider-container">
-                        <div class="swiper-container image-slider">
-                            <div class="swiper-wrapper">
-                                
-                                <!-- Slide -->
-                                <div class="swiper-slide">
-                                    <a href="images/screenshot-1.png" class="popup-link" data-effect="fadeIn">
-                                        <img class="img-fluid" src="images/screenshot-1.png" alt="alternative">
-                                    </a>
-                                </div>
-                                <!-- end of slide -->
-                                
-                                <!-- Slide -->
-                                <div class="swiper-slide">
-                                    <a href="images/screenshot-2.png" class="popup-link" data-effect="fadeIn">
-                                        <img class="img-fluid" src="images/screenshot-2.png" alt="alternative">
-                                    </a>
-                                </div>
-                                <!-- end of slide -->
-
-                                <!-- Slide -->
-                                <div class="swiper-slide">
-                                    <a href="images/screenshot-3.png" class="popup-link" data-effect="fadeIn">
-                                        <img class="img-fluid" src="images/screenshot-3.png" alt="alternative">
-                                    </a>
-                                </div>
-                                <!-- end of slide -->
-
-                                <!-- Slide -->
-                                <div class="swiper-slide">
-                                    <a href="images/screenshot-4.png" class="popup-link" data-effect="fadeIn">
-                                        <img class="img-fluid" src="images/screenshot-4.png" alt="alternative">
-                                    </a>
-                                </div>
-                                <!-- end of slide -->
-
-                                <!-- Slide -->
-                                <div class="swiper-slide">
-                                    <a href="images/screenshot-5.png" class="popup-link" data-effect="fadeIn">
-                                        <img class="img-fluid" src="images/screenshot-5.png" alt="alternative">
-                                    </a>
-                                </div>
-                                <!-- end of slide -->
-                                
-                                <!-- Slide -->
-                                <div class="swiper-slide">
-                                    <a href="images/screenshot-6.png" class="popup-link" data-effect="fadeIn">
-                                        <img class="img-fluid" src="images/screenshot-6.png" alt="alternative">
-                                    </a>
-                                </div>
-                                <!-- end of slide -->
-
-                                <!-- Slide -->
-                                <div class="swiper-slide">
-                                    <a href="images/screenshot-7.png" class="popup-link" data-effect="fadeIn">
-                                        <img class="img-fluid" src="images/screenshot-7.png" alt="alternative">
-                                    </a>
-                                </div>
-                                <!-- end of slide -->
-
-                                <!-- Slide -->
-                                <div class="swiper-slide">
-                                    <a href="images/screenshot-8.png" class="popup-link" data-effect="fadeIn">
-                                        <img class="img-fluid" src="images/screenshot-8.png" alt="alternative">
-                                    </a>
-                                </div>
-                                <!-- end of slide -->
-
-                                <!-- Slide -->
-                                <div class="swiper-slide">
-                                    <a href="images/screenshot-9.png" class="popup-link" data-effect="fadeIn">
-                                        <img class="img-fluid" src="images/screenshot-9.png" alt="alternative">
-                                    </a>
-                                </div>
-                                <!-- end of slide -->
-
-                                <!-- Slide -->
-                                <div class="swiper-slide">
-                                    <a href="images/screenshot-10.png" class="popup-link" data-effect="fadeIn">
-                                        <img class="img-fluid" src="images/screenshot-10.png" alt="alternative">
-                                    </a>
-                                </div>
-                                <!-- end of slide -->
-                                
-                            </div> <!-- end of swiper-wrapper -->
-
-                            <!-- Add Arrows -->
-                            <div class="swiper-button-next"></div>
-                            <div class="swiper-button-prev"></div>
-                            <!-- end of add arrows -->
-
-                        </div> <!-- end of swiper-container -->
-                    </div> <!-- end of slider-container -->
-                    <!-- end of image slider -->
-
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of slider-2 -->
-    <!-- end of screenshots -->
-
-    <!-- Testimonials -->
-    <div class="slider-1">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-
-                    <!-- Card Slider -->
-                    <div class="slider-container">
-                        <div class="swiper-container card-slider">
-                            <div class="swiper-wrapper">
-                                
-                                <!-- Slide -->
-                                <div class="swiper-slide">
-                                    <div class="card">
-                                        <img class="card-image" src="images/testimonial-1.jpg" alt="alternative">
-                                        <div class="card-body">
-                                            <p class="testimonial-text">I just finished my trial period and was so amazed with the support and results that I purchased Leno.</p>
-                                            <p class="testimonial-author">Jude Thorn - Designer</p>
-                                        </div>
-                                    </div>
-                                </div> <!-- end of swiper-slide -->
-                                <!-- end of slide -->
-        
-                                <!-- Slide -->
-                                <div class="swiper-slide">
-                                    <div class="card">
-                                        <img class="card-image" src="images/testimonial-2.jpg" alt="alternative">
-                                        <div class="card-body">
-                                            <p class="testimonial-text">I don't know how I managed to get work done without Leno. The speed of this application is amazing!</p>
-                                            <p class="testimonial-author">Roy Smith - Developer</p>
-                                        </div>
-                                    </div>        
-                                </div> <!-- end of swiper-slide -->
-                                <!-- end of slide -->
-        
-                                <!-- Slide -->
-                                <div class="swiper-slide">
-                                    <div class="card">
-                                        <img class="card-image" src="images/testimonial-3.jpg" alt="alternative">
-                                        <div class="card-body">
-                                            <p class="testimonial-text">This app has the potential of becoming a mandatory tool in every marketer's day to day operations.</p>
-                                            <p class="testimonial-author">Marsha Singer - Marketer</p>
-                                        </div>
-                                    </div>        
-                                </div> <!-- end of swiper-slide -->
-                                <!-- end of slide -->
-        
-                                <!-- Slide -->
-                                <div class="swiper-slide">
-                                    <div class="card">
-                                        <img class="card-image" src="images/testimonial-4.jpg" alt="alternative">
-                                        <div class="card-body">
-                                            <p class="testimonial-text">Searching for a great marketing automation app was difficult but thankfully I found Leno.</p>
-                                            <p class="testimonial-author">Tim Shaw - Designer</p>
-                                        </div>
-                                    </div>
-                                </div> <!-- end of swiper-slide -->
-                                <!-- end of slide -->
-        
-                                <!-- Slide -->
-                                <div class="swiper-slide">
-                                    <div class="card">
-                                        <img class="card-image" src="images/testimonial-5.jpg" alt="alternative">
-                                        <div class="card-body">
-                                            <p class="testimonial-text">Leno's support team is amazing. They've helped me with some issues and I am so grateful to them.</p>
-                                            <p class="testimonial-author">Lindsay Spice - Marketer</p>
-                                        </div>
-                                    </div>        
-                                </div> <!-- end of swiper-slide -->
-                                <!-- end of slide -->
-        
-                                <!-- Slide -->
-                                <div class="swiper-slide">
-                                    <div class="card">
-                                        <img class="card-image" src="images/testimonial-6.jpg" alt="alternative">
-                                        <div class="card-body">
-                                            <p class="testimonial-text">Who would have thought that Leno can provide such amazing results in just a few weeks of use</p>
-                                            <p class="testimonial-author">Ann Black - Developer</p>
-                                        </div>
-                                    </div>        
-                                </div> <!-- end of swiper-slide -->
-                                <!-- end of slide -->
-                            
-                            </div> <!-- end of swiper-wrapper -->
-        
-                            <!-- Add Arrows -->
-                            <div class="swiper-button-next"></div>
-                            <div class="swiper-button-prev"></div>
-                            <!-- end of add arrows -->
-        
-                        </div> <!-- end of swiper-container -->
-                    </div> <!-- end of slider-container -->
-                    <!-- end of card slider -->
-
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of slider-1 -->
-    <!-- end of testimonials -->
-    <!-- Download -->
-    <div class="basic-4">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-xl-5">
-                    <div class="text-container">
-                        <h2>Download <span class="blue">Leno</span></h2>
-                        <p class="p-large">Target the right customers for your business with the help of Leno's patented technology and increase conversion figures in less than 2 weeks</p>
-                        <a class="btn-solid-lg" href="#your-link"><i class="fab fa-apple"></i>APP STORE</a>
-                        <a class="btn-solid-lg" href="#your-link"><i class="fab fa-google-play"></i>PLAY STORE</a>
-                    </div> <!-- end of text-container -->
-                </div> <!-- end of col -->
-                <div class="col-lg-6 col-xl-7">
-                    <div class="image-container">
-                        <img class="img-fluid" src="images/download.png" alt="alternative">
-                    </div> <!-- end of img-container -->
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of basic-4 -->
-    <!-- end of download -->
-
-
-    <!-- Statistics -->
-    <div class="counter">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    
-                    <!-- Counter -->
-                    <div id="counter">
-                        <div class="cell">
-                            <div class="counter-value number-count" data-count="231">1</div>
-                            <p class="counter-info">Happy Users</p>
-                        </div>
-                        <div class="cell">
-                            <div class="counter-value number-count" data-count="85">1</div>
-                            <p class="counter-info">Issues Solved</p>
-                        </div>
-                        <div class="cell">
-                            <div class="counter-value number-count" data-count="59">1</div>
-                            <p class="counter-info">Good Reviews</p>
-                        </div>
-                        <div class="cell">
-                            <div class="counter-value number-count" data-count="127">1</div>
-                            <p class="counter-info">Case Studies</p>
-                        </div>
-                    </div>
-                    <!-- end of counter -->
-                    
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of counter -->
-    <!-- end of statistics -->
-
-
-    <!-- Contact -->
-    <div id="contact" class="form">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h2>CONTACT</h2>
-                    <ul class="list-unstyled li-space-lg">
-                        <li class="address">Don't hesitate to give us a call or just use the contact form below</li>
-                        <li><i class="fas fa-map-marker-alt"></i>22 Innovative, San Francisco, CA 94043, US</li>
-                        <li><i class="fas fa-phone"></i><a class="blue" href="tel:003024630820">+81 720 2212</a></li>
-                        <li><i class="fas fa-envelope"></i><a class="blue" href="mailto:office@leno.com">office@leno.com</a></li>
-                    </ul>
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-            <div class="row">
-                <div class="col-lg-6 offset-lg-3">
-                    
-                    <!-- Contact Form -->
-                    <form id="contactForm" data-toggle="validator" data-focus="false">
-                        <div class="form-group">
-                            <input type="text" class="form-control-input" id="cname" required>
-                            <label class="label-control" for="cname">Name</label>
-                            <div class="help-block with-errors"></div>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" class="form-control-input" id="cemail" required>
-                            <label class="label-control" for="cemail">Email</label>
-                            <div class="help-block with-errors"></div>
-                        </div>
-                        <div class="form-group">
-                            <textarea class="form-control-textarea" id="cmessage" required></textarea>
-                            <label class="label-control" for="cmessage">Your message</label>
-                            <div class="help-block with-errors"></div>
-                        </div>
-                        <div class="form-group checkbox">
-                            <input type="checkbox" id="cterms" value="Agreed-to-Terms" required>I have read and agree to Leno's stated conditions in <a href="privacy-policy.html">Privacy Policy</a> and <a href="terms-conditions.html">Terms Conditions</a> 
-                            <div class="help-block with-errors"></div>
-                        </div>
-                        <div class="form-group">
-                            <button type="submit" class="form-control-submit-button">SUBMIT MESSAGE</button>
-                        </div>
-                        <div class="form-message">
-                            <div id="cmsgSubmit" class="h3 text-center hidden"></div>
-                        </div>
-                    </form>
-                    <!-- end of contact form -->
-
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of form -->
-    <!-- end of contact -->
-
-
-    <!-- Footer -->
-    <div class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="footer-col">
-                        <h4>Informações Adicionais</h4>
-                        <iframe src="//www.administradores.com.br/clipping/" seamless="seamless" width="300" height="200"></iframe>
-
-                    </div>
-                </div> <!-- end of col -->
-                <div class="col-md-4">
-                    <div class="footer-col middle">
-                        <h4>Sobre a Agência Digital</h4>
-                        <p>Texto</p>
-                        
-                    </div>
-                </div> <!-- end of col -->
-                <div class="col-md-4">
-                    <div class="footer-col last">
-                        <h4>Mídias Sociais</h4>
-                        <span class="fa-stack">
-                            <a href="#your-link">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-facebook-f fa-stack-1x"></i>
-                            </a>
-                        </span>
-                        <span class="fa-stack">
-                            <a href="#your-link">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-twitter fa-stack-1x"></i>
-                            </a>
-                        </span>
-                        <span class="fa-stack">
-                            <a href="#your-link">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-google-plus-g fa-stack-1x"></i>
-                            </a>
-                        </span>
-                        <span class="fa-stack">
-                            <a href="#your-link">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-instagram fa-stack-1x"></i>
-                            </a>
-                        </span>
-                        <span class="fa-stack">
-                            <a href="#your-link">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-linkedin-in fa-stack-1x"></i>
-                            </a>
-                        </span>
-                    </div> 
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of footer -->  
-    <!-- end of footer -->
-
-
-    <!-- Copyright -->
-    <div class="copyright">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <p class="p-small">Copyright 2019 © Wellington Santos - Design, Marketing e Programação </p>
-                </div> <!-- end of col -->
-            </div> <!-- enf of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of copyright --> 
-    <!-- end of copyright -->
+            <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+  Copyright &copy;<script>document.write(new Date().getFullYear());</script> Todos os Direitos Reservados - Marketing para Arquitetos <BR> Site Desenvolvido por  <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="http://rocketmk.com.br/" target="_blank">Rocket MK</a>
+  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+          </div>
+        </div>
+      </div>
+    </footer>
     
-    	
-    <!-- Scripts -->
-    <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
-    <script src="js/popper.min.js"></script> <!-- Popper tooltip library for Bootstrap -->
-    <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
-    <script src="js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
-    <script src="js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
-    <script src="js/jquery.magnific-popup.js"></script> <!-- Magnific Popup for lightboxes -->
-    <script src="js/morphext.min.js"></script> <!-- Morphtext rotating text in the header -->
-    <script src="js/validator.min.js"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
-    <script src="js/scripts.js"></script> <!-- Custom scripts -->
-</body>
+  
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+  <script src="js/google-map.js"></script>
+  
+  <script src="js/main.js"></script>
+    
+  </body>
 </html>
